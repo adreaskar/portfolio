@@ -61,7 +61,7 @@ export function MobileNav() {
         <DrawerContent className="max-h-[80svh] p-0">
           <div className="p-6 overflow-auto">
             <div className="flex items-center justify-between gap-2 my-6">
-              <h4 className="text-xl font-medium">Abhishek Ghimire</h4>
+              <h4 className="text-xl font-medium">Andreas Karabetian</h4>
               <div className="flex items-center justify-center gap-4">
                 <ModeSwitcher className="size-6" />
                 <Link
