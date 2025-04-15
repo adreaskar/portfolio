@@ -1,7 +1,6 @@
 export const siteConfig = {
   name: "karabetian.dev",
-  url: "https://abhishekg.com.np",
-  ogImage: "https://abhishekg.com.np/og.jpg",
+  url: "https://karabetian.dev",
   description: "Portfolio of Andreas Karabetian",
   links: {
     twitter: "https://x.com/adreaskar",
@@ -12,7 +11,6 @@ export const siteConfig = {
     blog: "https://blog.karabetian.dev/",
     linkedin: "https://www.linkedin.com/in/andreaskarabetian/",
   },
-  bitinfonepal: "https://bitinfonepal.com",
   projects: {
     javascriptgr: {
       title: "javascript.gr · An educational website for JavaScript in Greek",
