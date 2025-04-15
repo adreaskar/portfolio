@@ -2,7 +2,7 @@ export const siteConfig = {
   name: "karabetian.dev",
   url: "https://karabetian.dev",
   description: "Portfolio of Andreas Karabetian",
-  ogImage: "https://karabetian.dev/og.jpg",
+  ogImage: "https://karabetian.dev/og.png",
   links: {
     twitter: "https://x.com/adreaskar",
     github: "https://github.com/adreaskar",
