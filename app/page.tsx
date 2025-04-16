@@ -24,6 +24,7 @@ const IntroductionPage = async () => {
         </PageHeaderDescription>
         <Image
           src="/dev.gif"
+          unoptimized
           width={2000}
           height={2000}
           alt="Andreas Karabetian"

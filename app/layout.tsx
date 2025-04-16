@@ -120,7 +120,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
                             <SideNav config={docsConfig} />
                           </div>
                         </aside>
-                        <div className="flex flex-col flex-1 py-6 pr-4 lg:py-8">
+                        <div className="flex flex-col flex-1 py-6 pr-2 lg:pr-4 lg:py-8">
                           {children}
                         </div>
                       </div>

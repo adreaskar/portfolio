@@ -36,7 +36,7 @@ function PageHeaderSubHeading({
   return (
     <h1
       className={cn(
-        "text-lg leading-tight tracking-tighter sm:text-xl md:text-2xl lg:leading-[1.1]",
+        "text-lg leading-tight tracking-normal sm:text-xl md:text-2xl lg:leading-[1.1]",
         className
       )}
       {...props}
