@@ -5,10 +5,6 @@ export const docsConfig = {
       href: "https://blog.karabetian.dev/",
     },
     {
-      title: "Academic",
-      href: "https://academic.karabetian.dev/",
-    },
-    {
       title: "LinkedIn",
       href: "https://linkedin.com/in/andreas-karabetian/",
     },
