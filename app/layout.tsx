@@ -92,7 +92,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         </head>
         <body
           className={cn(
-            "min-h-svh bg-background font-sans antialiased",
+            "bg-background min-h-svh font-sans antialiased",
             fontSans.variable,
             fontMono.variable
           )}
@@ -105,21 +105,21 @@ export default async function RootLayout({ children }: RootLayoutProps) {
             enableColorScheme
           >
             <div vaul-drawer-wrapper="">
-              <div className="relative flex flex-col min-h-svh bg-background">
+              <div className="bg-background relative flex min-h-svh flex-col">
                 <div
                   data-wrapper=""
-                  className="flex flex-col flex-1 border-grid"
+                  className="border-grid flex flex-1 flex-col"
                 >
                   <SiteHeader />
-                  <main className="flex flex-col flex-1">
+                  <main className="flex flex-1 flex-col">
                     <div className="container-wrapper">
                       <div className="container flex-1 items-start md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-10">
                         <aside className="border-grid fixed top-14 z-30 hidden h-[calc(100vh-3.5rem)] w-full shrink-0 border-r md:sticky md:block">
-                          <div className="h-full py-6 pr-4 overflow-auto no-scrollbar lg:py-8">
+                          <div className="no-scrollbar h-full overflow-auto py-6 pr-4 lg:py-8">
                             <SideNav config={docsConfig} />
                           </div>
                         </aside>
-                        <div className="flex flex-col flex-1 py-6 pr-2 lg:pr-4 lg:py-8">
+                        <div className="flex flex-1 flex-col py-6 pr-2 lg:py-8 lg:pr-4">
                           {children}
                         </div>
                       </div>

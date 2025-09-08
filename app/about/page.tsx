@@ -13,7 +13,7 @@ const AboutMePage = () => {
     <>
       <PageHeader>
         <PageHeaderHeading>Andreas Karabetian</PageHeaderHeading>
-        <PageHeaderSubHeading className="mt-2 text-muted-foreground">
+        <PageHeaderSubHeading className="text-muted-foreground mt-2">
           More than just a title, let’s dive deeper
         </PageHeaderSubHeading>
         <PageHeaderDescription>
@@ -65,7 +65,7 @@ const AboutMePage = () => {
           technologies. With a solid foundation in JavaScript frameworks, I am
           dedicated to building efficient and visually engaging applications.
         </PageHeaderDescription>
-        <PageHeaderDescription className="border-t border-dashed border-muted pt-4 mb-2">
+        <PageHeaderDescription className="border-muted mb-2 border-t border-dashed pt-4">
           Though my core interests lie in the design and development of
           full-stack applications, I am currently expanding my skills into Cloud
           Computing and DevOps practices, aiming to enhance my expertise in

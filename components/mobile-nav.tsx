@@ -35,7 +35,7 @@ export function MobileNav() {
       <DrawerTrigger asChild>
         <Button
           variant="ghost"
-          className="w-full h-8 gap-4 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
+          className="h-8 w-full gap-4 px-0 text-base hover:bg-transparent focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 md:hidden"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -52,15 +52,15 @@ export function MobileNav() {
             />
           </svg>
           <span className="sr-only">Toggle Menu</span>
-          <span className="flex items-center justify-between flex-1 h-8 px-2 text-sm font-normal border rounded-md shadow-none bg-muted/50 text-muted-foreground">
+          <span className="bg-muted/50 text-muted-foreground flex h-8 flex-1 items-center justify-between rounded-md border px-2 text-sm font-normal shadow-none">
             Search sections...
           </span>
         </Button>
       </DrawerTrigger>
       <DrawerTitle>
         <DrawerContent className="max-h-[80svh] p-0">
-          <div className="p-6 overflow-auto">
-            <div className="flex items-center justify-between gap-2 my-6">
+          <div className="overflow-auto p-6">
+            <div className="my-6 flex items-center justify-between gap-2">
               <h4 className="text-xl font-medium">Andreas Karabetian</h4>
               <div className="flex items-center justify-center gap-4">
                 <ModeSwitcher className="size-6" />
@@ -118,18 +118,18 @@ export function MobileNav() {
               ))}
             </div>
             <div className="flex flex-col gap-2">
-              <div className="items-center hidden gap-2 ml-auto md:flex-1 md:justify-end md:flex">
+              <div className="ml-auto hidden items-center gap-2 md:flex md:flex-1 md:justify-end">
                 <Link
                   href={siteConfig.links.github}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Icons.gitHub className="w-4 h-4" />
+                  <Icons.gitHub className="h-4 w-4" />
                   <span className="sr-only">GitHub</span>
                 </Link>
               </div>
             </div>
-            <p className="text-xs text-center text-muted-foreground">
+            <p className="text-muted-foreground text-center text-xs">
               — That's all folks —
             </p>
           </div>
@@ -160,7 +160,7 @@ function MobileLink({
         router.push(href.toString());
         onOpenChange?.(false);
       }}
-      className={cn("text-[1.15rem] border-b border-border pb-2", className)}
+      className={cn("border-border border-b pb-2 text-[1.15rem]", className)}
       {...props}
     >
       {children}

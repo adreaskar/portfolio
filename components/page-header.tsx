@@ -21,7 +21,7 @@ function PageHeaderHeading({
   return (
     <h1
       className={cn(
-        "text-2xl font-bold leading-tight tracking-tighter sm:text-3xl md:text-4xl lg:leading-[1.1]",
+        "text-2xl leading-tight font-bold tracking-tighter sm:text-3xl md:text-4xl lg:leading-[1.1]",
         className
       )}
       {...props}
@@ -51,7 +51,7 @@ function PageHeaderDescription({
   return (
     <p
       className={cn(
-        "w-full text-left text-base font-light text-foreground sm:text-lg",
+        "text-foreground w-full text-left text-base font-light sm:text-lg",
         className
       )}
       {...props}
@@ -66,7 +66,7 @@ function PageActions({
   return (
     <div
       className={cn(
-        "flex w-full items-center justify-start gap-2 my-4 pt-2",
+        "my-4 flex w-full items-center justify-start gap-2 pt-2",
         className
       )}
       {...props}

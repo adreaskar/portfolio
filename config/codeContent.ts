@@ -71,4 +71,36 @@ console.log("Project Field:", projectField);
 console.log(\`My Education: \${educationJourney.degree}\`);
 educationJourney.courses.forEach(course => console.log(\`- \${course}\`));
 `,
+
+  publications: `const publications = [
+  {
+    title: "How to Write a Paper That Nobody Will Read",
+    authors: ["Me", "My Imposter Syndrome", "Coffee"],
+    year: 2023,
+    abstract: "A groundbreaking study on the art of academic writing that results in papers with 0 citations but 100% existential dread.",
+    citations: 0,
+    readTime: "2 hours (mostly staring at the wall)",
+  },
+];
+
+// Function to check if anyone actually read my papers
+const checkReadership = (paper) => {
+  return paper.citations > 0 ? "Someone read it! 🎉" : "Just me and my mom... 📚";
+};
+
+publications.forEach(paper => {
+  console.log(\`📄 \${paper.title}\`);
+  console.log(\`📊 \${checkReadership(paper)}\`);
+  console.log(\`⏱️  Reading time: \${paper.readTime}\n\`);
+});
+`,
+
+  education: `const education = [
+  {
+    title: "Education 1",
+    school: "School 1",
+    isLatest: true,
+  },
+];
+`,
 };

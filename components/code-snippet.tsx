@@ -11,10 +11,10 @@ const CodeSnippet = async ({
   const highlightedCode = await highlightCode(code);
   return (
     <React.Fragment>
-      <h4 className="my-4 mb-2 text-lg font-semibold tracking-tight scroll-m-20">
+      <h4 className="my-4 mb-2 scroll-m-20 text-lg font-semibold tracking-tight">
         {title}
       </h4>
-      <div className="relative overflow-auto bg-black rounded-lg ring-1 ring-gray-700">
+      <div className="relative overflow-auto rounded-lg bg-black ring-1 ring-gray-700">
         <div
           data-rehype-pretty-code-fragment
           dangerouslySetInnerHTML={{

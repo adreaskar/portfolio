@@ -22,7 +22,7 @@ export const docsConfig = {
       title: "Sections",
       items: [
         {
-          title: "Introduction",
+          title: "Home",
           href: "/",
           items: [],
         },
@@ -49,6 +49,11 @@ export const docsConfig = {
         {
           title: "Education",
           href: "/education",
+          items: [],
+        },
+        {
+          title: "Publications",
+          href: "/publications",
           items: [],
         },
       ],

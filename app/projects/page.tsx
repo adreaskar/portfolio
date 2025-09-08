@@ -15,7 +15,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { code } from "@/config/codeContent";
-import { siteConfig } from "@/config/site";
+import { projects, Project } from "./data";
 import Link from "next/link";
 import { ExternalLink } from "lucide-react";
 
@@ -24,14 +24,14 @@ const ProjectsPage = () => {
     <>
       <PageHeader className="mb-10">
         <PageHeaderHeading>Projects</PageHeaderHeading>
-        <PageHeaderSubHeading className="mt-2 text-muted-foreground">
+        <PageHeaderSubHeading className="text-muted-foreground mt-2">
           A lot of ideas, but some are still under construction
         </PageHeaderSubHeading>
       </PageHeader>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 card-container">
-        {Object.entries(siteConfig.projects).map(([key, project]) => (
-          <Card key={key} className="w-full gap-2">
+      <div className="card-container grid grid-cols-1 gap-10 lg:grid-cols-2">
+        {projects.map((project: Project, index: number) => (
+          <Card key={index} className="w-full gap-2">
             <CardHeader>
               <CardTitle className="leading-6">{project.title}</CardTitle>
             </CardHeader>
@@ -40,7 +40,7 @@ const ProjectsPage = () => {
               <CardDescription>
                 <div className="flex gap-2">
                   {"live" in project && (
-                    <Link href={project.live} target="_blank">
+                    <Link href={project.live!} target="_blank">
                       <Badge variant="default">
                         Live
                         <ExternalLink className="h-4 w-4" />
@@ -48,7 +48,7 @@ const ProjectsPage = () => {
                     </Link>
                   )}
                   {"github" in project && (
-                    <Link href={project.github} target="_blank">
+                    <Link href={project.github!} target="_blank">
                       <Badge variant="outline">
                         GitHub
                         <ExternalLink className="h-4 w-4" />
@@ -61,7 +61,7 @@ const ProjectsPage = () => {
                 </div>
               </CardDescription>
             </CardContent>
-            <div className="my-2 border-t border-border" />
+            <div className="border-border my-2 border-t" />
             <CardFooter className="py-0">
               <div className="flex flex-wrap gap-2">
                 {project.tags.map((tag) => (

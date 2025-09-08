@@ -16,7 +16,7 @@ export function SideNav({ config }: any) {
           <h4 className="rounded-md px-2 py-1 text-sm font-medium">
             {item.title}{" "}
             {item.label && (
-              <span className="ml-2 rounded-md bg-[#adfa1d] px-1.5 py-0.5 text-xs font-normal leading-none text-[#000000] no-underline group-hover:no-underline">
+              <span className="ml-2 rounded-md bg-[#adfa1d] px-1.5 py-0.5 text-xs leading-none font-normal text-[#000000] no-underline group-hover:no-underline">
                 {item.label}
               </span>
             )}
@@ -45,11 +45,11 @@ function DocsNavItems({
             key={index}
             href={item.href}
             className={cn(
-              "group relative flex h-8 w-full items-center rounded-lg px-2 after:absolute after:inset-x-0 after:inset-y-[-2px]  after:rounded-lg hover:bg-accent hover:text-accent-foreground ",
+              "group hover:bg-accent hover:text-accent-foreground relative flex h-8 w-full items-center rounded-lg px-2 after:absolute after:inset-x-0 after:inset-y-[-2px] after:rounded-lg",
               item.disabled && "cursor-not-allowed opacity-60",
               pathname === item.href
-                ? "bg-accent font-medium text-accent-foreground"
-                : "font-normal text-foreground"
+                ? "bg-accent text-accent-foreground font-medium"
+                : "text-foreground font-normal"
             )}
             target={item.external ? "_blank" : ""}
             rel={item.external ? "noreferrer" : ""}
@@ -65,13 +65,13 @@ function DocsNavItems({
           <span
             key={index}
             className={cn(
-              "flex w-full cursor-not-allowed items-center rounded-md p-2 text-muted-foreground hover:underline",
+              "text-muted-foreground flex w-full cursor-not-allowed items-center rounded-md p-2 hover:underline",
               item.disabled && "cursor-not-allowed opacity-60"
             )}
           >
             {item.title}
             {item.label && (
-              <span className="ml-2 rounded-md bg-muted px-1.5 py-0.5 text-xs leading-none text-muted-foreground no-underline group-hover:no-underline">
+              <span className="bg-muted text-muted-foreground ml-2 rounded-md px-1.5 py-0.5 text-xs leading-none no-underline group-hover:no-underline">
                 {item.label}
               </span>
             )}

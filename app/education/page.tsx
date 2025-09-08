@@ -7,14 +7,15 @@ import {
 } from "@/components/page-header";
 import Pager from "@/components/pager";
 import { code } from "@/config/codeContent";
-import { siteConfig } from "@/config/site";
+import { education, Education } from "./data";
+import { GraduationCap } from "lucide-react";
 
 const EducationPage = () => {
   return (
     <>
       <PageHeader className="mb-10">
         <PageHeaderHeading>Education</PageHeaderHeading>
-        <PageHeaderSubHeading className="mt-2 text-muted-foreground">
+        <PageHeaderSubHeading className="text-muted-foreground mt-2">
           Yes, I attended University classes
         </PageHeaderSubHeading>
         <PageHeaderDescription>
@@ -28,29 +29,21 @@ const EducationPage = () => {
         </PageHeaderDescription>
       </PageHeader>
 
-      <ol className="relative mb-10 border-gray-200 border-s dark:border-gray-700">
-        {siteConfig.education.map((education, index) => (
-          <li key={index} className="not-last:mb-10 ms-6">
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-primary rounded-full -start-3 ring-4 md:ring-8 ring-[#d9fca3] dark:ring-[#141e08] dark:bg-[#2c4c02]">
-              <svg
-                className="w-2.5 h-2.5 text-[var(--primary-text)] dark:text-primary"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z" />
-              </svg>
+      <ol className="relative mb-10 border-s border-gray-200 dark:border-gray-700">
+        {education.map((education: Education, index: number) => (
+          <li key={index} className="ms-6 not-last:mb-10">
+            <span className="bg-primary absolute -start-3 flex h-6 w-6 items-center justify-center rounded-full ring-4 ring-[#d9fca3] md:ring-8 dark:bg-[#2c4c02] dark:ring-[#141e08]">
+              <GraduationCap className="text-primary h-4 w-4" />
             </span>
-            <h3 className="items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-              {education.title} · {education.company}
+            <h3 className="mb-1 items-center text-lg font-semibold text-gray-900 dark:text-white">
+              {education.title} · {education.school}
               {education.isLatest && (
-                <span className="bg-primary text-[var(--primary-text)] text-sm font-medium me-2 px-2.5 py-0.5 rounded-sm ms-3">
+                <span className="bg-primary ms-3 me-2 rounded-sm px-2.5 py-0.5 text-sm font-medium text-[var(--primary-text)]">
                   Latest
                 </span>
               )}
             </h3>
-            <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+            <time className="mb-2 block text-sm leading-none font-normal text-gray-400 dark:text-gray-500">
               {education.date}
             </time>
             <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
@@ -64,9 +57,9 @@ const EducationPage = () => {
 
       <Pager
         prevHref="/experience"
-        nextHref="/"
+        nextHref="/publications"
         prevTitle="Experience"
-        nextTitle="Home"
+        nextTitle="Publications"
       />
     </>
   );

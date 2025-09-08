@@ -16,7 +16,7 @@ const SkillsToolsPage = () => {
     <>
       <PageHeader>
         <PageHeaderHeading>Skills & Tools</PageHeaderHeading>
-        <PageHeaderSubHeading className="mt-2 text-muted-foreground">
+        <PageHeaderSubHeading className="text-muted-foreground mt-2">
           Stuff i learned by coding all night
         </PageHeaderSubHeading>
         <PageHeaderDescription>
@@ -32,12 +32,12 @@ const SkillsToolsPage = () => {
       {/* skills and tools badges */}
       <div
         id="badges"
-        className="flex flex-wrap items-center justify-center gap-2 my-4"
+        className="my-4 flex flex-wrap items-center justify-center gap-2"
       >
         {mySkills.map((item) => (
           <Badge
             key={item.title}
-            className="p-4 py-2 border border-secondary bg-secondary-foreground text-secondary"
+            className="border-secondary bg-secondary-foreground text-secondary border p-4 py-2"
           >
             {Icons[item.icon as keyof typeof Icons]?.({
               className: "mr-2 size-4",

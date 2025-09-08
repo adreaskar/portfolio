@@ -1,4 +1,4 @@
-import { codeToHtml } from "shiki"
+import { codeToHtml } from "shiki";
 
 export async function highlightCode(code: string) {
   const html = await codeToHtml(code, {
@@ -7,11 +7,11 @@ export async function highlightCode(code: string) {
     transformers: [
       {
         code(node) {
-          node.properties["data-line-numbers"] = ""
+          node.properties["data-line-numbers"] = "";
         },
       },
     ],
-  })
+  });
 
-  return html
+  return html;
 }

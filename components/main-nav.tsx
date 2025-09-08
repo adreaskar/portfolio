@@ -11,8 +11,8 @@ export function MainNav() {
   const pathname = usePathname();
 
   return (
-    <div className="hidden mr-4 md:flex">
-      <Link href="/" className="flex items-center gap-2 mr-4 lg:mr-6">
+    <div className="mr-4 hidden md:flex">
+      <Link href="/" className="mr-4 flex items-center gap-2 lg:mr-6">
         <Icons.logo />
         <span className="hidden font-bold lg:inline-block">
           {siteConfig.name}
@@ -24,7 +24,7 @@ export function MainNav() {
             key={item.href}
             href={item.href}
             target="_blank"
-            className="transition-colors hover:text-foreground/80"
+            className="hover:text-foreground/80 transition-colors"
           >
             {item.title}
           </Link>
@@ -32,7 +32,7 @@ export function MainNav() {
         <Link
           href={siteConfig.links.resume}
           target="_blank"
-          className="flex items-center gap-1 transition-colors hover:text-foreground/80"
+          className="hover:text-foreground/80 flex items-center gap-1 transition-colors"
         >
           Resume <ExternalLink className="size-3" />
         </Link>

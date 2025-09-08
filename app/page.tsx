@@ -14,7 +14,7 @@ const IntroductionPage = async () => {
     <>
       <PageHeader>
         <PageHeaderHeading>Andreas Karabetian</PageHeaderHeading>
-        <PageHeaderSubHeading className="mt-2 text-muted-foreground">
+        <PageHeaderSubHeading className="text-muted-foreground mt-2">
           Full-Stack Software Engineer
         </PageHeaderSubHeading>
         <PageHeaderDescription>
