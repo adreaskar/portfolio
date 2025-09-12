@@ -1,14 +1,14 @@
-import CodeSnippet from "@/components/code-snippet";
+import CodeSnippet from "@/components/code-snippet"
 import {
   PageHeader,
   PageHeaderDescription,
   PageHeaderHeading,
   PageHeaderSubHeading,
-} from "@/components/page-header";
-import Pager from "@/components/pager";
-import { code } from "@/config/codeContent";
-import { education, Education } from "./data";
-import { GraduationCap } from "lucide-react";
+} from "@/components/page-header"
+import Pager from "@/components/pager"
+import { code } from "@/config/codeContent"
+import { education, Education } from "./data"
+import { GraduationCap } from "lucide-react"
 
 const EducationPage = () => {
   return (
@@ -53,7 +53,7 @@ const EducationPage = () => {
         ))}
       </ol>
 
-      <CodeSnippet code={code.educationJourney} title="educationJourney.js" />
+      <CodeSnippet code={code.education} title="education.js" />
 
       <Pager
         prevHref="/experience"
@@ -62,6 +62,6 @@ const EducationPage = () => {
         nextTitle="Publications"
       />
     </>
-  );
-};
-export default EducationPage;
+  )
+}
+export default EducationPage

@@ -1,19 +1,19 @@
-import { Metadata } from "next";
-import { ExternalLink, ScrollText } from "lucide-react";
-import { publications, Publication } from "./data";
+import { Metadata } from "next"
+import { ExternalLink, ScrollText } from "lucide-react"
+import { publications, Publication } from "./data"
 import {
   PageHeader,
   PageHeaderDescription,
   PageHeaderHeading,
   PageHeaderSubHeading,
-} from "@/components/page-header";
-import Pager from "@/components/pager";
-import CodeSnippet from "@/components/code-snippet";
-import { code } from "@/config/codeContent";
+} from "@/components/page-header"
+import Pager from "@/components/pager"
+import CodeSnippet from "@/components/code-snippet"
+import { code } from "@/config/codeContent"
 export const metadata: Metadata = {
   title: "Publications | Portfolio",
   description: "Academic publications and research work",
-};
+}
 
 export default function PublicationsPage() {
   return (
@@ -57,7 +57,7 @@ export default function PublicationsPage() {
               href={pub.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:bg-accent/70 bg-accent/40 flex w-fit items-center gap-2 rounded-md px-2 py-1.5 text-sm transition-all duration-300"
+              className="hover:bg-accent bg-accent/40 flex w-fit items-center gap-2 rounded-md px-2 py-1.5 text-sm transition-all duration-300"
             >
               Read more
               <ExternalLink className="h-3 w-3" />
@@ -70,10 +70,10 @@ export default function PublicationsPage() {
 
       <Pager
         prevHref="/education"
-        nextHref="/"
+        nextHref="/presentations"
         prevTitle="Education"
-        nextTitle="Home"
+        nextTitle="Presentations"
       />
     </>
-  );
+  )
 }

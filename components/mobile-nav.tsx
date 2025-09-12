@@ -1,34 +1,34 @@
-"use client";
+"use client"
 
-import * as React from "react";
-import Link, { LinkProps } from "next/link";
-import { useRouter } from "next/navigation";
+import * as React from "react"
+import Link, { LinkProps } from "next/link"
+import { useRouter } from "next/navigation"
 
-import { docsConfig } from "@/config/docs";
-import { cn } from "@/lib/utils";
-import { useMetaColor } from "@/hooks/use-meta-color";
-import { Button } from "./ui/button";
+import { docsConfig } from "@/config/docs"
+import { cn } from "@/lib/utils"
+import { useMetaColor } from "@/hooks/use-meta-color"
+import { Button } from "./ui/button"
 import {
   Drawer,
   DrawerContent,
   DrawerTitle,
   DrawerTrigger,
-} from "@/components/ui/drawer";
-import { ModeSwitcher } from "./mode-switcher";
-import { siteConfig } from "@/config/site";
-import { Icons } from "./icons";
+} from "@/components/ui/drawer"
+import { ModeSwitcher } from "./mode-switcher"
+import { siteConfig } from "@/config/site"
+import { Icons } from "./icons"
 
 export function MobileNav() {
-  const [open, setOpen] = React.useState(false);
-  const { setMetaColor, metaColor } = useMetaColor();
+  const [open, setOpen] = React.useState(false)
+  const { setMetaColor, metaColor } = useMetaColor()
 
   const onOpenChange = React.useCallback(
     (open: boolean) => {
-      setOpen(open);
-      setMetaColor(open ? "#09090b" : metaColor);
+      setOpen(open)
+      setMetaColor(open ? "#09090b" : metaColor)
     },
     [setMetaColor, metaColor]
-  );
+  )
 
   return (
     <Drawer open={open} onOpenChange={onOpenChange}>
@@ -136,13 +136,13 @@ export function MobileNav() {
         </DrawerContent>
       </DrawerTitle>
     </Drawer>
-  );
+  )
 }
 
 interface MobileLinkProps extends LinkProps {
-  onOpenChange?: (open: boolean) => void;
-  children: React.ReactNode;
-  className?: string;
+  onOpenChange?: (open: boolean) => void
+  children: React.ReactNode
+  className?: string
 }
 
 function MobileLink({
@@ -152,18 +152,18 @@ function MobileLink({
   children,
   ...props
 }: MobileLinkProps) {
-  const router = useRouter();
+  const router = useRouter()
   return (
     <Link
       href={href}
       onClick={() => {
-        router.push(href.toString());
-        onOpenChange?.(false);
+        router.push(href.toString())
+        onOpenChange?.(false)
       }}
       className={cn("border-border border-b pb-2 text-[1.15rem]", className)}
       {...props}
     >
       {children}
     </Link>
-  );
+  )
 }

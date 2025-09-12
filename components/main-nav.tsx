@@ -1,14 +1,14 @@
-"use client";
+"use client"
 
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import { siteConfig } from "@/config/site";
-import { ExternalLink } from "lucide-react";
-import { Icons } from "./icons";
-import { docsConfig } from "@/config/docs";
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+import { siteConfig } from "@/config/site"
+import { ExternalLink } from "lucide-react"
+import { Icons } from "./icons"
+import { docsConfig } from "@/config/docs"
 
 export function MainNav() {
-  const pathname = usePathname();
+  const pathname = usePathname()
 
   return (
     <div className="mr-4 hidden md:flex">
@@ -38,5 +38,5 @@ export function MainNav() {
         </Link>
       </nav>
     </div>
-  );
+  )
 }

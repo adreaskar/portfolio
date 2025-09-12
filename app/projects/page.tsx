@@ -1,11 +1,11 @@
-import CodeSnippet from "@/components/code-snippet";
-import { PageHeader } from "@/components/page-header";
+import CodeSnippet from "@/components/code-snippet"
+import { PageHeader } from "@/components/page-header"
 import {
   PageHeaderHeading,
   PageHeaderSubHeading,
-} from "@/components/page-header";
-import Pager from "@/components/pager";
-import { Badge } from "@/components/ui/badge";
+} from "@/components/page-header"
+import Pager from "@/components/pager"
+import { Badge } from "@/components/ui/badge"
 import {
   Card,
   CardContent,
@@ -13,11 +13,11 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { code } from "@/config/codeContent";
-import { projects, Project } from "./data";
-import Link from "next/link";
-import { ExternalLink } from "lucide-react";
+} from "@/components/ui/card"
+import { code } from "@/config/codeContent"
+import { projects, Project } from "./data"
+import Link from "next/link"
+import { ExternalLink } from "lucide-react"
 
 const ProjectsPage = () => {
   return (
@@ -32,7 +32,12 @@ const ProjectsPage = () => {
       <div className="card-container grid grid-cols-1 gap-10 lg:grid-cols-2">
         {projects.map((project: Project, index: number) => (
           <Card key={index} className="w-full gap-2">
-            <CardHeader>
+            <CardHeader className="flex items-center gap-2">
+              {project.icon && (
+                <span className="h-7 w-7 items-center justify-center rounded-full ring-2 ring-[var(--border)] sm:hidden xl:flex dark:ring-[var(--border)]">
+                  <project.icon className="h-4 w-4" />
+                </span>
+              )}
               <CardTitle className="leading-6">{project.title}</CardTitle>
             </CardHeader>
             <CardContent className="flex flex-col gap-2">
@@ -84,6 +89,6 @@ const ProjectsPage = () => {
         nextTitle="Skills & Tools"
       />
     </>
-  );
-};
-export default ProjectsPage;
+  )
+}
+export default ProjectsPage

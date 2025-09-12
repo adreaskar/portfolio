@@ -1,12 +1,12 @@
-import Link from "next/link";
+import Link from "next/link"
 
-import { siteConfig } from "@/config/site";
-import { Button } from "./ui/button";
-import { ModeSwitcher } from "./mode-switcher";
-import { MainNav } from "./main-nav";
-import { MobileNav } from "./mobile-nav";
-import { CommandMenu } from "./command-menu";
-import { Icons } from "./icons";
+import { siteConfig } from "@/config/site"
+import { Button } from "./ui/button"
+import { ModeSwitcher } from "./mode-switcher"
+import { MainNav } from "./main-nav"
+import { MobileNav } from "./mobile-nav"
+import { CommandMenu } from "./command-menu"
+import { Icons } from "./icons"
 
 export function SiteHeader() {
   return (
@@ -41,5 +41,5 @@ export function SiteHeader() {
         </div>
       </div>
     </header>
-  );
+  )
 }

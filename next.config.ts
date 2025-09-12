@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from "next"
 
 const nextConfig: NextConfig = {
   output: "standalone",
@@ -8,6 +8,6 @@ const nextConfig: NextConfig = {
     },
   },
   reactStrictMode: false,
-};
+}
 
-export default nextConfig;
+export default nextConfig

@@ -1,14 +1,14 @@
-import CodeSnippet from "@/components/code-snippet";
+import CodeSnippet from "@/components/code-snippet"
 import {
   PageHeader,
   PageHeaderDescription,
   PageHeaderHeading,
   PageHeaderSubHeading,
-} from "@/components/page-header";
-import Pager from "@/components/pager";
-import { code } from "@/config/codeContent";
-import { experience, Experience } from "./data";
-import { BriefcaseBusiness } from "lucide-react";
+} from "@/components/page-header"
+import Pager from "@/components/pager"
+import { code } from "@/config/codeContent"
+import { experience, Experience } from "./data"
+import { BriefcaseBusiness } from "lucide-react"
 
 const ExperiencePage = () => {
   return (
@@ -60,6 +60,6 @@ const ExperiencePage = () => {
         nextTitle="Education"
       />
     </>
-  );
-};
-export default ExperiencePage;
+  )
+}
+export default ExperiencePage

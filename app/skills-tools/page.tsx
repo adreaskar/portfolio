@@ -1,15 +1,15 @@
-import CodeSnippet from "@/components/code-snippet";
-import { Icons } from "@/components/icons";
+import CodeSnippet from "@/components/code-snippet"
+import { Icons } from "@/components/icons"
 import {
   PageHeader,
   PageHeaderDescription,
   PageHeaderHeading,
   PageHeaderSubHeading,
-} from "@/components/page-header";
-import Pager from "@/components/pager";
-import { Badge } from "@/components/ui/badge";
-import { code } from "@/config/codeContent";
-import { mySkills } from "@/constants";
+} from "@/components/page-header"
+import Pager from "@/components/pager"
+import { Badge } from "@/components/ui/badge"
+import { code } from "@/config/codeContent"
+import { mySkills } from "@/constants"
 
 const SkillsToolsPage = () => {
   return (
@@ -56,6 +56,6 @@ const SkillsToolsPage = () => {
         nextTitle="Experience"
       />
     </>
-  );
-};
-export default SkillsToolsPage;
+  )
+}
+export default SkillsToolsPage

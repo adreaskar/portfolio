@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils"
 
 function PageHeader({
   className,
@@ -11,7 +11,7 @@ function PageHeader({
         <div className="flex flex-col items-start gap-1 py-0">{children}</div>
       </div>
     </section>
-  );
+  )
 }
 
 function PageHeaderHeading({
@@ -26,7 +26,7 @@ function PageHeaderHeading({
       )}
       {...props}
     />
-  );
+  )
 }
 
 function PageHeaderSubHeading({
@@ -36,12 +36,12 @@ function PageHeaderSubHeading({
   return (
     <h1
       className={cn(
-        "text-lg leading-tight tracking-normal sm:text-xl md:text-2xl lg:leading-[1.1]",
+        "text-lg leading-tight tracking-normal sm:text-lg md:text-xl lg:leading-[1.1]",
         className
       )}
       {...props}
     />
-  );
+  )
 }
 
 function PageHeaderDescription({
@@ -56,7 +56,7 @@ function PageHeaderDescription({
       )}
       {...props}
     />
-  );
+  )
 }
 
 function PageActions({
@@ -71,7 +71,7 @@ function PageActions({
       )}
       {...props}
     />
-  );
+  )
 }
 
 export {
@@ -80,4 +80,4 @@ export {
   PageHeaderDescription,
   PageHeaderHeading,
   PageHeaderSubHeading,
-};
+}

@@ -1,14 +1,14 @@
-import { highlightCode } from "@/lib/highlight-code";
-import React from "react";
+import { highlightCode } from "@/lib/highlight-code"
+import React from "react"
 
 const CodeSnippet = async ({
   title,
   code,
 }: {
-  title: string;
-  code: string;
+  title: string
+  code: string
 }) => {
-  const highlightedCode = await highlightCode(code);
+  const highlightedCode = await highlightCode(code)
   return (
     <React.Fragment>
       <h4 className="my-4 mb-2 scroll-m-20 text-lg font-semibold tracking-tight">
@@ -24,6 +24,6 @@ const CodeSnippet = async ({
         />
       </div>
     </React.Fragment>
-  );
-};
-export default CodeSnippet;
+  )
+}
+export default CodeSnippet

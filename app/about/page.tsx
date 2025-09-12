@@ -1,12 +1,12 @@
-import CodeSnippet from "@/components/code-snippet";
+import CodeSnippet from "@/components/code-snippet"
 import {
   PageHeader,
   PageHeaderDescription,
   PageHeaderHeading,
   PageHeaderSubHeading,
-} from "@/components/page-header";
-import Pager from "@/components/pager";
-import { code } from "@/config/codeContent";
+} from "@/components/page-header"
+import Pager from "@/components/pager"
+import { code } from "@/config/codeContent"
 
 const AboutMePage = () => {
   return (
@@ -84,6 +84,6 @@ const AboutMePage = () => {
         nextTitle="Projects"
       />
     </>
-  );
-};
-export default AboutMePage;
+  )
+}
+export default AboutMePage

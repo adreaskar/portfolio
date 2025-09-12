@@ -9,6 +9,10 @@ export const docsConfig = {
       href: "https://linkedin.com/in/andreas-karabetian/",
     },
     {
+      title: "Scholar",
+      href: "https://scholar.google.com/citations?user=cRMQ4SAAAAAJ&hl=en&authuser=1",
+    },
+    {
       title: "YouTube",
       href: "https://youtube.com/@karabetian",
     },
@@ -52,7 +56,12 @@ export const docsConfig = {
           href: "/publications",
           items: [],
         },
+        {
+          title: "Presentations",
+          href: "/presentations",
+          items: [],
+        },
       ],
     },
   ],
-};
+}

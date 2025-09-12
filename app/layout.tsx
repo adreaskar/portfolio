@@ -1,15 +1,15 @@
-import { ThemeProvider } from "@/components/theme-provider";
-import { META_THEME_COLORS, siteConfig } from "@/config/site";
-import { fontSans, fontMono } from "@/lib/fonts";
-import { Toaster } from "@/components/ui/sonner";
+import { ThemeProvider } from "@/components/theme-provider"
+import { META_THEME_COLORS, siteConfig } from "@/config/site"
+import { fontSans, fontMono } from "@/lib/fonts"
+import { Toaster } from "@/components/ui/sonner"
 
-import { Metadata, Viewport } from "next";
-import "./globals.css";
-import { cn } from "@/lib/utils";
-import { SiteHeader } from "@/components/site-header";
-import { SideNav } from "@/components/side-nav";
-import { SiteFooter } from "@/components/site-footer";
-import { docsConfig } from "@/config/docs";
+import { Metadata, Viewport } from "next"
+import "./globals.css"
+import { cn } from "@/lib/utils"
+import { SiteHeader } from "@/components/site-header"
+import { SideNav } from "@/components/side-nav"
+import { SiteFooter } from "@/components/site-footer"
+import { docsConfig } from "@/config/docs"
 
 export const metadata: Metadata = {
   title: siteConfig.name,
@@ -63,14 +63,14 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: `${siteConfig.url}/site.webmanifest`,
-};
+}
 
 export const viewport: Viewport = {
   themeColor: META_THEME_COLORS.light,
-};
+}
 
 interface RootLayoutProps {
-  children: React.ReactNode;
+  children: React.ReactNode
 }
 
 export default async function RootLayout({ children }: RootLayoutProps) {
@@ -134,5 +134,5 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         </body>
       </html>
     </>
-  );
+  )
 }

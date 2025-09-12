@@ -1,13 +1,13 @@
-import CodeSnippet from "@/components/code-snippet";
+import CodeSnippet from "@/components/code-snippet"
 import {
   PageHeaderDescription,
   PageHeaderHeading,
   PageHeaderSubHeading,
-} from "@/components/page-header";
-import { PageHeader } from "@/components/page-header";
-import Pager from "@/components/pager";
-import { code } from "@/config/codeContent";
-import Image from "next/image";
+} from "@/components/page-header"
+import { PageHeader } from "@/components/page-header"
+import Pager from "@/components/pager"
+import { code } from "@/config/codeContent"
+import Image from "next/image"
 
 const IntroductionPage = async () => {
   return (
@@ -41,6 +41,6 @@ const IntroductionPage = async () => {
         nextTitle="About Me"
       />
     </>
-  );
-};
-export default IntroductionPage;
+  )
+}
+export default IntroductionPage

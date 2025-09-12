@@ -16,4 +16,4 @@ export const mySkills = [
   { title: "Windows", icon: "windows" },
   { title: "npm", icon: "npm" },
   { title: "Docker", icon: "docker" },
-];
+]

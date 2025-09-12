@@ -59,7 +59,7 @@ experience.forEach((job) => {
 console.log("Project Field:", projectField);
 `,
 
-  educationJourney: `const educationJourney = {
+  education: `const education = {
   degree: "Bachelor of Life Lessons (and Code)",
   courses: [
     "Advanced Imposter Syndrome",
@@ -95,12 +95,23 @@ publications.forEach(paper => {
 });
 `,
 
-  education: `const education = [
+  presentations: `const presentations = [
   {
-    title: "Education 1",
-    school: "School 1",
-    isLatest: true,
-  },
+    title: "How to Make PowerPoint Slides That Don't Put People to Sleep",
+    date: "2024-01-15",
+    location: "Conference Room 404 (Not Found)",
+    audience: "3 confused people and a janitor",
+    slides: 47, // because 46 wasn't enough
+    questions: 0, // crickets chirping
 ];
+
+presentation.forEach(presentation => {
+  console.log(\`📄 \${presentation.title}\`);
+  console.log(\`📅 \${presentation.date}\`);
+  console.log(\`📍 \${presentation.location}\`);
+  console.log(\`👥 \${presentation.audience}\`);
+  console.log(\`📊 \${presentation.slides}\`);
+  console.log(\`❓ \${presentation.questions}\`);
+});
 `,
-};
+}

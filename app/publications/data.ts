@@ -1,10 +1,10 @@
 export interface Publication {
-  title: string;
-  year: number;
-  publisher: string;
-  abstract: string;
-  url: string;
-  isLatest: boolean;
+  title: string
+  year: number
+  publisher: string
+  abstract: string
+  url: string
+  isLatest: boolean
 }
 
 export const publications: Publication[] = [
@@ -108,4 +108,4 @@ export const publications: Publication[] = [
     url: "https://ebooks.iospress.nl/doi/10.3233/SHTI220743",
     isLatest: false,
   },
-];
+]

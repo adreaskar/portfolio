@@ -1,10 +1,10 @@
 export interface Experience {
-  title: string;
-  company: string;
-  isLatest: boolean;
-  date: string;
-  location: string;
-  description: string;
+  title: string
+  company: string
+  isLatest: boolean
+  date: string
+  location: string
+  description: string
 }
 
 export const experience: Experience[] = [
@@ -44,4 +44,4 @@ export const experience: Experience[] = [
     description:
       "Worked as a freelance website developer, where I designed and developed websites for small businesses and individuals, using WordPress and custom HTML/CSS solutions. This experience honed my skills in web development and client communication.",
   },
-];
+]
