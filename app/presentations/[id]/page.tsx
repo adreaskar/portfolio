@@ -10,9 +10,14 @@ import Image from "next/image"
 import { ArrowLeft, MapPin, UsersRound, CalendarDays } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 
-const PresentationPage = ({ params }: { params: { id: string } }) => {
+const PresentationPage = async ({
+  params,
+}: {
+  params: Promise<{ id: string }>
+}) => {
+  const { id } = await params
   const presentation = presentations.find(
-    (presentation) => presentation.id === params.id
+    (presentation) => presentation.id === id
   )
   return (
     <>
