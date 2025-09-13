@@ -22,6 +22,14 @@ const IntroductionPage = async () => {
           application development. I enjoy crafting responsive web solutions
           using modern technologies like Next.js, React, and Tailwind CSS.
         </PageHeaderDescription>
+        <PageHeaderDescription>
+          Though my core interests lie in the design and development of
+          full-stack applications, I am currently expanding my skills into Cloud
+          Computing and DevOps practices, aiming to enhance my expertise in
+          building scalable and efficient applications. I am passionate about
+          continuous learning and staying updated with the latest industry
+          trends.
+        </PageHeaderDescription>
         <Image
           src="/dev.gif"
           unoptimized
@@ -36,9 +44,9 @@ const IntroductionPage = async () => {
 
       <Pager
         prevHref="/"
-        nextHref="/about"
+        nextHref="/projects"
         prevTitle="Previous"
-        nextTitle="About Me"
+        nextTitle="Projects"
       />
     </>
   )

@@ -6,10 +6,6 @@ export async function GET() {
 }
 `,
 
-  aboutMe: `const superpower = () => "Missing deadlines and procrastinating.";
-console.log(\`My superpower is: \${superpower()}\`);
-`,
-
   skillsTools: `const mySkills = [
   "HTML", "CSS", "JavaScript", "ReactJS", "NextJS", "Tailwind CSS", "NodeJS", "ExpressJS", 
   "MongoDB", "Git", "GitHub", "Postman", "Linux", "macOS", "Windows", "npm", "Docker"

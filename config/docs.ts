@@ -19,16 +19,11 @@ export const docsConfig = {
   ],
   sidebarNav: [
     {
-      title: "Sections",
+      title: "Personal",
       items: [
         {
-          title: "Home",
-          href: "/",
-          items: [],
-        },
-        {
           title: "About Me",
-          href: "/about",
+          href: "/",
           items: [],
         },
         {
@@ -41,11 +36,21 @@ export const docsConfig = {
           href: "/skills-tools",
           items: [],
         },
+      ],
+    },
+    {
+      title: "Professional",
+      items: [
         {
           title: "Experience",
           href: "/experience",
           items: [],
         },
+      ],
+    },
+    {
+      title: "Academic",
+      items: [
         {
           title: "Education",
           href: "/education",
@@ -56,6 +61,7 @@ export const docsConfig = {
           href: "/publications",
           items: [],
         },
+
         {
           title: "Presentations",
           href: "/presentations",
