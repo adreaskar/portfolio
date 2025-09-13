@@ -42,7 +42,7 @@ export const presentations: Presentation[] = [
     location: "University of Piraeus, Athens, Greece",
     event: "IEEE Tech Seminars UniPi",
     description:
-      "I had the pleasure to co-host a workshop session with my friend and colleague Panagiotis Karamolegkos. This event was organised by IEEE University of Piraeus Student Branch. \n\n Our session, titled 'My first website with a glimpse of AI', showcased web development principles, cloud services using Google Firebase and ai assistants using Meta Llama3.1.",
+      "I had the pleasure to co-host a workshop session with my friend and colleague Panagiotis Karamolegkos. This event was organised by IEEE University of Piraeus Student Branch. \n\n Our session, titled 'My first website with a glimpse of AI', showcased web development principles, cloud services using Google Firebase and AI assistants using Meta's Llama 3.1.",
     id: "university-of-piraeus-workshop",
     images: [
       "/talks-img/workshop1.jpg",
