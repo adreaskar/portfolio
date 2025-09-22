@@ -9,9 +9,18 @@ export interface Education {
 
 export const education: Education[] = [
   {
-    title: "Bachelor's Degree in Digital Systems",
-    school: "Dpt. Digital Systems · University of Piraeus",
+    title: "Master's Degree in Computer Science",
+    school: "Dpt. Informatics and Telematics · Harokopio University of Athens",
     isLatest: true,
+    date: "Sep. 2025 - Present",
+    location: "Athens, Greece",
+    description:
+      "I've started my Master of Science (MSc) in Informatics and Telematics at Harokopio University, focusing on Cloud and Edge Systems, Applications, and Cloud Solutions Architecture, as part of my journey to deepen my expertise and grow as a professional in modern computing technologies.",
+  },
+  {
+    title: "Bachelor's Degree in Computer Science",
+    school: "Dpt. Digital Systems · University of Piraeus",
+    isLatest: false,
     date: "Sep. 2017 - Sep. 2023",
     location: "Piraeus, Greece",
     description:
