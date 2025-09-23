@@ -34,12 +34,13 @@ const ProjectsPage = () => {
           <Card key={index} className="w-full gap-2">
             <CardHeader className="flex items-center gap-2">
               {project.icon && (
-                <span className="h-7 w-7 items-center justify-center rounded-full ring-2 ring-[var(--border)] sm:hidden xl:flex dark:ring-[var(--border)]">
+                <span className="hidden h-7 w-7 items-center justify-center rounded-full ring-2 ring-[var(--border)] xl:flex dark:ring-[var(--border)]">
                   <project.icon className="h-4 w-4" />
                 </span>
               )}
               <CardTitle className="leading-6">{project.title}</CardTitle>
             </CardHeader>
+
             <CardContent className="flex flex-col gap-2">
               <CardDescription>{project.description}</CardDescription>
               <CardDescription>
@@ -66,6 +67,7 @@ const ProjectsPage = () => {
                 </div>
               </CardDescription>
             </CardContent>
+
             <div className="border-border my-2 border-t" />
             <CardFooter className="py-0">
               <div className="flex flex-wrap gap-2">
