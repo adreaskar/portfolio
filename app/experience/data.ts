@@ -9,9 +9,18 @@ export interface Experience {
 
 export const experience: Experience[] = [
   {
+    title: "Cloud Engineer",
+    company: "EY Greece",
+    isLatest: true,
+    date: "Nov. 2025 - Present",
+    location: "Athens, Greece (Hybrid)",
+    description:
+      "As a Cloud Engineer at EY Greece, I am responsible for designing and implementing cloud solutions for the company. My role involves collaborating with cross-functional teams to implement Azure cloud-based solutions that enhance efficiency and scalability.",
+  },
+  {
     title: "Researcher / Software Engineer",
     company: "AI4Gov",
-    isLatest: true,
+    isLatest: false,
     date: "Jan. 2023 - Dec. 2025",
     location: "Piraeus, Greece",
     description:

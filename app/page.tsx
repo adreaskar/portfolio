@@ -15,12 +15,11 @@ const IntroductionPage = async () => {
       <PageHeader>
         <PageHeaderHeading>Andreas Karabetian</PageHeaderHeading>
         <PageHeaderSubHeading className="text-muted-foreground mt-2">
-          Full-Stack Software Engineer
+          Cloud Engineer - Full-Stack Developer
         </PageHeaderSubHeading>
         <PageHeaderDescription>
           I am a dedicated Software Engineer specializing in full-stack
-          application development. I enjoy crafting responsive web solutions
-          using modern technologies like Next.js, React, and Tailwind CSS.
+          application development and cloud computing.
         </PageHeaderDescription>
         <PageHeaderDescription>
           Though my core interests lie in the design and development of
