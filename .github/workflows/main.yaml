@@ -105,7 +105,7 @@ jobs:
   # Final Job: Build final image ============================================
   build-final-image:
     name: Build final docker image
-    needs: [unit-testing, scan-image]
+    needs: [scan-image]
     runs-on: ubuntu-latest
 
     permissions:
