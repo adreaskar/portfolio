@@ -1,4 +1,10 @@
-import { BookMarked, PiggyBank, HeartPulse, Code } from "lucide-react"
+import {
+  BookMarked,
+  PiggyBank,
+  HeartPulse,
+  Code,
+  Newspaper,
+} from "lucide-react"
 
 export interface Project {
   title: string
@@ -25,6 +31,21 @@ export const projects: Project[] = [
     live: "https://javascript.gr",
     github: "https://github.com/adreaskar/javascript.gr",
     icon: BookMarked,
+  },
+  {
+    title: "newsflow.gr · Your personalized news aggregator",
+    description:
+      "NewsFlow is a service that aggregates news from various sources, providing users with a comprehensive overview of current events. With personalized news feeds, users can stay informed about topics that matter most to them. Currently operating in beta with invite-only access.",
+    tags: [
+      "TypeScript",
+      "React",
+      "Vite",
+      "Supabase",
+      "Web Application",
+      "SaaS",
+    ],
+    live: "https://newsflow.gr",
+    icon: Newspaper,
   },
   {
     title: "ExpenseTracker · Web app for tracking expenses",
@@ -62,7 +83,6 @@ export const projects: Project[] = [
       "CSS",
       "JavaScript",
       "Firebase",
-      "Web Development",
       "LLM",
       "AI",
       "Workshop",
