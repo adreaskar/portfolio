@@ -56,9 +56,9 @@ const EducationPage = () => {
       <CodeSnippet code={code.education} title="education.js" />
 
       <Pager
-        prevHref="/experience"
+        prevHref="/certifications"
         nextHref="/publications"
-        prevTitle="Experience"
+        prevTitle="Certifications"
         nextTitle="Publications"
       />
     </>

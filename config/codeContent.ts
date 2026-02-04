@@ -110,4 +110,24 @@ presentation.forEach(presentation => {
   console.log(\`❓ \${presentation.questions}\`);
 });
 `,
+
+  certifications: `const certifications = [
+  {
+    name: "Azure Cloud Wizard",
+    issuer: "Microsoft",
+    status: "Valid (until I forget to renew)",
+    skills: ["Cloud Magic", "Azure Incantations", "Cost Optimization Spells"],
+    verifyLink: "https://verify.me/totally-real-cert",
+  }
+];
+
+// Function to display certifications
+const displayCerts = () => {
+  certifications.forEach(cert => {
+    console.log(\`🏆 \${cert.name} - Issued by \${cert.issuer}\`);
+  });
+};
+
+displayCerts();
+`,
 }

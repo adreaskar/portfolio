@@ -46,6 +46,11 @@ export const docsConfig = {
           href: "/experience",
           items: [],
         },
+        {
+          title: "Certifications",
+          href: "/certifications",
+          items: [],
+        },
       ],
     },
     {
