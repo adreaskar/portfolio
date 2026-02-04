@@ -4,6 +4,7 @@ import {
   HeartPulse,
   Code,
   Newspaper,
+  LockKeyhole,
 } from "lucide-react"
 
 export interface Project {
@@ -33,7 +34,7 @@ export const projects: Project[] = [
     icon: BookMarked,
   },
   {
-    title: "newsflow.gr · Your personalized news aggregator",
+    title: "NewsFlow · Your personalized news aggregator",
     description:
       "NewsFlow is a service that aggregates news from various sources, providing users with a comprehensive overview of current events. With personalized news feeds, users can stay informed about topics that matter most to them. Currently operating in beta with invite-only access.",
     tags: [
@@ -46,6 +47,36 @@ export const projects: Project[] = [
     ],
     live: "https://newsflow.gr",
     icon: Newspaper,
+  },
+  {
+    title: "SecureDrop · Secure file sharing platform",
+    description:
+      "SecureDrop is a secure file sharing platform that allows users to share files safely and privately. It ensures end-to-end encryption and protects user data from unauthorized access.",
+    tags: [
+      "React",
+      "Keycloak",
+      "MinIO",
+      "RabbitMQ",
+      "Grafana",
+      "Node-RED",
+      "ClamAV",
+      "Kubernetes",
+      "Supabase",
+      "Node.js",
+      "SaaS",
+    ],
+    live: "https://securedrop.gr",
+    icon: LockKeyhole,
+  },
+
+  {
+    title: "CovidTrakcer · Web app for tracking COVID-19 cases",
+    description:
+      "CovidTracker is a full-stack web application that provides real-time tracking of COVID-19 cases. It offers users the ability to monitor the spread of the virus, view statistics, and stay informed about the latest developments.",
+    tags: ["Next.js", "Full Stack", "Web Application", "Open Source"],
+    live: "https://covidtracker.karabetian.dev",
+    github: "https://github.com/adreaskarabetian/covid19-tracker",
+    icon: HeartPulse,
   },
   {
     title: "ExpenseTracker · Web app for tracking expenses",
@@ -64,15 +95,6 @@ export const projects: Project[] = [
       "Web Application",
     ],
     icon: PiggyBank,
-  },
-  {
-    title: "CovidTrakcer · Web app for tracking COVID-19 cases",
-    description:
-      "CovidTracker is a full-stack web application that provides real-time tracking of COVID-19 cases. It offers users the ability to monitor the spread of the virus, view statistics, and stay informed about the latest developments.",
-    tags: ["Next.js", "Full Stack", "Web Application", "Open Source"],
-    live: "https://covidtracker.karabetian.dev",
-    github: "https://github.com/adreaskarabetian/covid19-tracker",
-    icon: HeartPulse,
   },
   {
     title: "My first website with a glimpse of AI · Workshop",
