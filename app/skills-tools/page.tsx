@@ -9,7 +9,7 @@ import {
 import Pager from "@/components/pager"
 import { Badge } from "@/components/ui/badge"
 import { code } from "@/config/codeContent"
-import { mySkills } from "@/constants"
+import { skillCategories } from "@/constants"
 
 const SkillsToolsPage = () => {
   return (
@@ -29,21 +29,27 @@ const SkillsToolsPage = () => {
         </PageHeaderDescription>
       </PageHeader>
 
-      {/* skills and tools badges */}
-      <div
-        id="badges"
-        className="my-4 flex flex-wrap items-center justify-center gap-2"
-      >
-        {mySkills.map((item) => (
-          <Badge
-            key={item.title}
-            className="border-secondary bg-secondary-foreground text-secondary border p-4 py-2"
-          >
-            {Icons[item.icon as keyof typeof Icons]?.({
-              className: "mr-2 size-4",
-            })}
-            {item.title}
-          </Badge>
+      {/* skills and tools badges by category */}
+      <div id="skills-categories" className="my-8 space-y-8">
+        {skillCategories.map((category) => (
+          <div key={category.category} className="space-y-3">
+            <h3 className="text-foreground text-lg font-semibold">
+              {category.category}
+            </h3>
+            <div className="flex flex-wrap gap-2">
+              {category.skills.map((item) => (
+                <Badge
+                  key={item.title}
+                  className="border-secondary bg-card border p-4 py-2 text-white"
+                >
+                  {Icons[item.icon as keyof typeof Icons]?.({
+                    className: "mr-2 size-4",
+                  })}
+                  {item.title}
+                </Badge>
+              ))}
+            </div>
+          </div>
         ))}
       </div>
 
