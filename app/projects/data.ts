@@ -77,7 +77,7 @@ export const projects: Project[] = [
   {
     title: "My first website with a glimpse of AI · Workshop",
     description:
-      "Application built during the IEEE workshop 'My first website with a glimpse of AI', presented by Adreas Karabetian and Panagiotis Karamolegkos.",
+      "Application built during the IEEE workshop 'My first website with a glimpse of AI', presented by Andreas Karabetian and Panagiotis Karamolegkos.",
     tags: [
       "HTML",
       "CSS",

@@ -127,7 +127,7 @@ export const presentations: Presentation[] = [
     location: "Ionian University, Corfu, Greece",
     event: "The 13th IISA International Conference",
     description:
-      "My first presentation of a research publication, really excited! \n\n I presented the Dimensioning Workbench tool, which is a tool that I co-developed along with my research coleagues for the DIASTEMA research project. The tool is used to dimension the resources of a cloud application based on its requirements and the available resources of the cloud provider, through a user friendly interface.",
+      "My first presentation of a research publication, really excited! \n\n I presented the Dimensioning Workbench tool, which is a tool that I co-developed along with my research colleagues for the DIASTEMA research project. The tool is used to dimension the resources of a cloud application based on its requirements and the available resources of the cloud provider, through a user friendly interface.",
     id: "iisa-dimensioning-workbench",
     images: [
       "/talks-img/iisa_1.jpg",
