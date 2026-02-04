@@ -6,12 +6,7 @@ export async function GET() {
 }
 `,
 
-  skillsTools: `const mySkills = [
-  "HTML", "CSS", "JavaScript", "ReactJS", "NextJS", "Tailwind CSS", "NodeJS", "ExpressJS", 
-  "MongoDB", "Git", "GitHub", "Postman", "Linux", "macOS", "Windows", "npm", "Docker"
-];
-
-const getSkills = () => {
+  skillsTools: `const getSkills = () => {
   return mySkills.length > 0 
     ? \`I have skills in: \${mySkills.join(", ")}! 💻🚀\`
     : "Skills not found... imposter syndrome activated! 😱";
@@ -20,29 +15,8 @@ const getSkills = () => {
 console.log(getSkills());
 `,
 
-  experience: `const experience = [
-  {
-    role: "Senior bug fixer",
-    company: "Remote Office (My Desk)",
-    duration: "Forever",
-    skills: ["Bug Staring", "Keyboard Jamming"],
-  },
-  {
-    role: "Full-Stack Developer",
-    company: "Stack Overflow Solutions Inc.",
-    duration: "When Google is Available",
-    skills: ["Copy-Pasting", "Fixing Bugs with Console.log", "Deploying & Praying"],
-  },
-  {
-    role: "Intern",
-    company: "My Own Side Project",
-    duration: "Since Birth",
-    skills: ["Breaking Code", "Googling Errors", "Naming Variables Creatively"],
-  },
-];
-
-experience.forEach((job) => {
-  console.log(\`👨‍💻 \${job.role} at \${job.company} (\${job.duration}) \n🚀 Skills: \${job.skills.join(", ")}\`);
+  experience: `experience.forEach((job) => {
+  console.log(\`👨‍💻 \${job.role} at \${job.company} (\${job.duration}) 🚀 Skills: \${job.skills.join(", ")}\`);
 });
 `,
 
@@ -55,40 +29,14 @@ experience.forEach((job) => {
 console.log("Project Field:", projectField);
 `,
 
-  education: `const education = {
-  degree: "Bachelor of Life Lessons (and Code)",
-  courses: [
-    "Advanced Imposter Syndrome",
-    "Procrastination 101",
-    "Debugging: The Final Frontier",
-  ],
-};
-
-console.log(\`My Education: \${educationJourney.degree}\`);
+  education: `console.log(\`My Education: \${educationJourney.degrees}\`);
 educationJourney.courses.forEach(course => console.log(\`- \${course}\`));
 `,
 
-  publications: `const publications = [
-  {
-    title: "How to Write a Paper That Nobody Will Read",
-    authors: ["Me", "My Imposter Syndrome", "Coffee"],
-    year: 2023,
-    abstract: "A groundbreaking study on the art of academic writing that results in papers with 0 citations but 100% existential dread.",
-    citations: 0,
-    readTime: "2 hours (mostly staring at the wall)",
-  },
-];
-
-// Function to check if anyone actually read my papers
+  publications: `// Function to check if anyone actually read my papers
 const checkReadership = (paper) => {
   return paper.citations > 0 ? "Someone read it! 🎉" : "Just me and my mom... 📚";
 };
-
-publications.forEach(paper => {
-  console.log(\`📄 \${paper.title}\`);
-  console.log(\`📊 \${checkReadership(paper)}\`);
-  console.log(\`⏱️  Reading time: \${paper.readTime}\n\`);
-});
 `,
 
   presentations: `const presentations = [
@@ -100,29 +48,9 @@ publications.forEach(paper => {
     slides: 47, // because 46 wasn't enough
     questions: 0, // crickets chirping
 ];
-
-presentation.forEach(presentation => {
-  console.log(\`📄 \${presentation.title}\`);
-  console.log(\`📅 \${presentation.date}\`);
-  console.log(\`📍 \${presentation.location}\`);
-  console.log(\`👥 \${presentation.audience}\`);
-  console.log(\`📊 \${presentation.slides}\`);
-  console.log(\`❓ \${presentation.questions}\`);
-});
 `,
 
-  certifications: `const certifications = [
-  {
-    name: "Azure Cloud Wizard",
-    issuer: "Microsoft",
-    status: "Valid (until I forget to renew)",
-    skills: ["Cloud Magic", "Azure Incantations", "Cost Optimization Spells"],
-    verifyLink: "https://verify.me/totally-real-cert",
-  }
-];
-
-// Function to display certifications
-const displayCerts = () => {
+  certifications: `const displayCerts = () => {
   certifications.forEach(cert => {
     console.log(\`🏆 \${cert.name} - Issued by \${cert.issuer}\`);
   });
