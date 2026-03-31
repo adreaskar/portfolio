@@ -40,7 +40,7 @@ const SkillsToolsPage = () => {
               {category.skills.map((item) => (
                 <Badge
                   key={item.title}
-                  className="border-secondary bg-card border p-4 py-2 text-white"
+                  className="border-secondary bg-card text-card-foreground border p-4 py-2"
                 >
                   {Icons[item.icon as keyof typeof Icons]?.({
                     className: "mr-2 size-4",

@@ -24,6 +24,7 @@ export const skillCategories = [
       { title: "Azure", icon: "azure" },
       { title: "Azure DevOps", icon: "azureDevops" },
       { title: "Kubernetes", icon: "kubernetes" },
+      { title: "Terraform", icon: "terraform" },
       { title: "Docker", icon: "docker" },
       { title: "Linux", icon: "linux" },
     ],
