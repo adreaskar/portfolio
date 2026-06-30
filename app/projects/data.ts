@@ -65,7 +65,7 @@ export const projects: Project[] = [
       "Node.js",
       "SaaS",
     ],
-    live: "https://securedrop.gr",
+    github: "https://github.com/adreaskar/securedrop",
     icon: LockKeyhole,
   },
 
@@ -75,7 +75,7 @@ export const projects: Project[] = [
       "CovidTracker is a full-stack web application that provides real-time tracking of COVID-19 cases. It offers users the ability to monitor the spread of the virus, view statistics, and stay informed about the latest developments.",
     tags: ["Next.js", "Full Stack", "Web Application", "Open Source"],
     live: "https://covidtracker.karabetian.dev",
-    github: "https://github.com/adreaskarabetian/covid19-tracker",
+    github: "https://github.com/adreaskar/covid19-tracker",
     icon: HeartPulse,
   },
   {
