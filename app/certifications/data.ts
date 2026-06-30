@@ -9,6 +9,15 @@ export interface Certification {
 
 export const certifications: Certification[] = [
   {
+    title: "Microsoft Certified: Azure Administrator Associate",
+    date: "Issued Jul 2026",
+    credentialId: "AZ-104",
+    verificationUrl:
+      "https://learn.microsoft.com/api/credentials/share/en-gb/karabetian/ADF789879C76EB96?sharingId=76C65D6E48B6FD6F",
+    logo: "/certifications/azure-az-104.webp",
+    color: "#0064b4",
+  },
+  {
     title: "Microsoft Certified: Azure Fundamentals",
     date: "Issued Feb 2026",
     credentialId: "AZ-900",
