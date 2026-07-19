@@ -20,12 +20,12 @@ const SkillsToolsPage = () => {
           Stuff i learned by coding all night
         </PageHeaderSubHeading>
         <PageHeaderDescription>
-          As a full-stack Software Engineer, I specialize in building web
-          applications using modern technologies such as Next.js, React, and
-          Tailwind CSS. I'm also well-versed in backend development with Node.js
-          and Express, and I have experience with databases like MongoDB and
-          MySQL. My skill set extends to cloud technologies like Docker,
-          enabling me to deploy and manage applications efficiently.
+          I have experience with modern web technologies such as Next.js, React,
+          and Tailwind CSS. I'm also well-versed in backend development with
+          Node.js and Express, as well as databases like MongoDB and MySQL. My
+          skill set extends to cloud technologies like Docker, Kubernetes and
+          Microsoft Azure enabling me to deploy and manage applications
+          efficiently.
         </PageHeaderDescription>
       </PageHeader>
 

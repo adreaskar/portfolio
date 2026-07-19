@@ -15,19 +15,15 @@ const IntroductionPage = async () => {
       <PageHeader>
         <PageHeaderHeading>Andreas Karabetian</PageHeaderHeading>
         <PageHeaderSubHeading className="text-muted-foreground mt-2">
-          Cloud Engineer - Full-Stack Developer
+          Cloud & DevOps Engineer at EY
         </PageHeaderSubHeading>
         <PageHeaderDescription>
-          I am a dedicated Software Engineer specializing in full-stack
-          application development and cloud computing.
-        </PageHeaderDescription>
-        <PageHeaderDescription>
-          Though my core interests lie in the design and development of
-          full-stack applications, I am currently expanding my skills into Cloud
-          Computing and DevOps practices, aiming to enhance my expertise in
-          building scalable and efficient applications. I am passionate about
-          continuous learning and staying updated with the latest industry
-          trends.
+          Specializing in deploying and managing scalable infrastructure using
+          Docker, Kubernetes, and Terraform to streamline cloud operations.
+          Experienced in implementing CI/CD pipelines with GitHub Actions and
+          Azure DevOps to accelerate development cycles and ensure reliable
+          delivery. Focused on leveraging Azure cloud solutions to drive
+          innovation and optimize performance for evolving business needs.
         </PageHeaderDescription>
         <Image
           src="/dev.gif"

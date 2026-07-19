@@ -9,7 +9,7 @@ export interface Experience {
 
 export const experience: Experience[] = [
   {
-    title: "Cloud Engineer",
+    title: "Cloud & DevOps Engineer",
     company: "EY Greece",
     isLatest: true,
     date: "Nov. 2025 - Present",
